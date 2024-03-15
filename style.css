@@ -5,7 +5,6 @@ body {
 }
 
 header {
-    background-color: blue;
     box-sizing: border-box;
     height: 80px;
     width: 99%;
@@ -17,11 +16,10 @@ header {
 }
 
 header #logo {
-    background-color: red;
+    
 }
 
 header #container {
-    background-color: aqua;
     display: flex;
     justify-content: space-between;
     gap: 20px;
@@ -29,35 +27,35 @@ header #container {
 
 #container #busca {
     border: solid#F0F0F0 1px;
+    display: flex;
     padding: 10px;
     border-radius: 20px;
     width: 400px;
-    background-color: red;
+    justify-content: space-between;
 }
 
 #container #anuncie {
     padding: 10px;
     border-radius: 20px;
     width: 200px;
-    background-color: red;
+
 }
 
 #container #mundo {
     padding: 10px;
     border-radius: 20px;
     width: 25px;
-    background-color: red;
 }
 
 #container #perfil {
     padding: 10px;
     border-radius: 20px;
-    width: 50px;
-    background-color: red;
+    width: 20px;
+    align-items: center;
+    justify-content: space-between 0;
 }
 
 main {
-    background-color: blueviolet;
     box-sizing: border-box;
     padding: 25px 100px 0 100px;
     display: flex;
@@ -67,7 +65,6 @@ main {
 }
 
 main #info_top_fotos {
-    background-color: red;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -75,23 +72,36 @@ main #info_top_fotos {
 }
 
 #info_top_fotos #titulo {
-    background-color: cadetblue;
     width: 600px;
+    font-size: 22px;
 }
 
 #info_top_fotos #links {
-    background-color: cadetblue;
     width: 200px;
     display: flex;
     justify-content: space-between;
 }
 
 #links #compartilhar {
-    background-color: yellow;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    justify-content: space-between 5px;
+
+    margin-left: 6px;
+    font-size: 1rem;
+    color: #222;
 }
 
 #links #salvar {
-    background-color: yellow;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    justify-content: space-between 5px;
+
+    margin-left: 6px;
+    font-size: 1rem;
+    color: #222;
 }
 
 main #fotos {
@@ -129,21 +139,36 @@ main #info_fotos_ate_avaliacao {
 }
 
 #avaliacao #parte_1 {
-    background-color: red;
+   display: flex;
+   align-items: center;
+}
+
+.parte_1_li {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 100px;
+    font-size: 16px;
+    color: #222;
+}
+
+#avaliacao #parte_1 
+
+#avaliacao #parte_2 {
     display: flex;
     align-items: center;
     width: 100px;
 }
 
-#avaliacao #parte_2 {
-    background-color: red;
+.parte_2_li {
     display: flex;
+    text-align: center;
     align-items: center;
-    width: 100px;
+    font-size: 16px;
+    width: 80px;
 }
 
 #avaliacao #parte_3 {
-    background-color: red;
     border-right: solid#F0F0F0 1px;
     height: 40px;
     display: flex;
@@ -152,7 +177,6 @@ main #info_fotos_ate_avaliacao {
 }
 
 #avaliacao #parte_4 {
-    background-color: red;
     display: flex;
     align-items: center;
     width: 100px;
@@ -197,7 +221,6 @@ main #info_fotos_ate_avaliacao {
 }
 
 #parte_esquerda #texto {
-    background-color: yellow;
     height: 100px;
     margin-bottom: 40px;
 }
@@ -256,12 +279,12 @@ main #info_fotos_ate_avaliacao {
 }
 
 #pontos #ponto_1 {
-    background-color: red;
     display: flex;
     height: 30px;
-    width: 100px;
+    width: 300px;
     margin-right: 20px;
-    gap: 10px
+    gap: 10px;
+    align-items: center;
 }
 
 #mostrar_ponto {
@@ -510,4 +533,77 @@ main #info_fotos_ate_avaliacao {
 
 #deve_saber_mais {
     margin-top: 10px;
+}
+
+#titulo {
+    font-size: 26px;
+}
+
+.fotos {
+    display: grid;
+    grid-template-rows: 180px 180px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 30px;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+
+}
+
+.fotos div {
+    width: 100%;
+    height: 100%;
+}
+
+.fotos img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fotos .img1 {
+    grid-row: 1 / 3;
+    grid-column: 1 / 3;
+}
+
+.fotos .img1 img {
+    border-top-left-radius: 15px;
+}
+
+.titulo {
+    font-size: 22px;
+}
+
+.info_hotel {
+    display: flex;
+    padding: 0;
+    align-items: flex-start;
+}
+
+.li-info {
+    margin: 5px;
+    font-size: 16px;
+}
+
+.parte_4_h3 {
+    font-size: 22px;
+}
+
+.li_avaliacoes {
+    display: flex;
+}
+
+#anfitriao #imagem {
+    height: 2rem;
+    border-radius: 50%; 
+    overflow: hidden; 
+    
+}
+
+.descricao {
+    margin: 0;
+}
+
+#ponto_decricao_ {
+    text-decoration: line-through;
 }
