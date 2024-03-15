@@ -121,7 +121,6 @@ main #info_fotos_ate_avaliacao {
 }
 
 #info_fotos_ate_avaliacao #parte_esquerda {
-    background-color: cadetblue;
     width: 60%;
 }
 
@@ -165,7 +164,7 @@ main #info_fotos_ate_avaliacao {
     text-align: center;
     align-items: center;
     font-size: 16px;
-    width: 80px;
+    width: 200px;
 }
 
 #avaliacao #parte_3 {
@@ -180,6 +179,15 @@ main #info_fotos_ate_avaliacao {
     display: flex;
     align-items: center;
     width: 100px;
+    gap: 0;
+}
+
+.parte_4_h3 {
+    display: flex;
+    font-size: 22px;
+    align-items: center;
+    flex-direction: column;
+    gap: 0;
 }
 
 #parte_esquerda #anfitriao {
@@ -227,7 +235,6 @@ main #info_fotos_ate_avaliacao {
 
 #parte_esquerda #outras {
     margin-bottom: 30px;
-    background-color: yellow;
 }
 
 #parte_esquerda #mostrar_mais {
@@ -243,7 +250,6 @@ main #info_fotos_ate_avaliacao {
 
 #parte_esquerda #imagem_quarto {
     margin-bottom: 20px;
-    background-color: yellow;
     height: 200px;
 
 }
@@ -270,7 +276,6 @@ main #info_fotos_ate_avaliacao {
 
 #o_que_oferece #pontos {
     margin-bottom: 40px;
-    background-color: yellow;
     height: 200px;
     display: flex;
     flex-direction: column;
@@ -306,7 +311,6 @@ main #info_fotos_ate_avaliacao {
 }
 
 #calendario {
-    background-color: yellow;
     height: 330px;
 }
 
@@ -337,11 +341,10 @@ main #info_fotos_ate_avaliacao {
 }
 
 #parte_direita #preco_noite {
-    background-color: yellow;
+ 
 }
 
 #parte_direita #tabela {
-    background-color: yellow;
     border: solid#F0F0F0 1px;
     border-radius: 10px;
     height: 100px;
@@ -380,7 +383,6 @@ main #info_fotos_ate_avaliacao {
 }
 
 #parte_direita #reservar {
-    background-color: yellow;
     height: 50px;
     border-radius: 10px;
     display: flex;
@@ -389,28 +391,24 @@ main #info_fotos_ate_avaliacao {
 }
 
 #parte_direita #aviso {
-    background-color: yellow;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 #parte_direita #taxa_noite {
-    background-color: yellow;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 #parte_direita #taxa_limpeza {
-    background-color: yellow;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 #parte_direita #taxa_airbnb {
-    background-color: yellow;
     display: flex;
     justify-content: space-between;
     border-bottom: solid#F0F0F0 1px;
@@ -418,7 +416,6 @@ main #info_fotos_ate_avaliacao {
 }
 
 #parte_direita #total {
-    background-color: yellow;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -434,7 +431,6 @@ main #info_fotos_ate_avaliacao {
 
 #achado {
     height: 100px;
-    background-color: yellow;
     border: solid#F0F0F0 1px;
     border-radius: 10px;
     display: flex;
@@ -461,7 +457,6 @@ main #info_fotos_ate_avaliacao {
 #comentario {
     display: flex;
     flex-direction: column;
-    background-color: yellow;
     gap: 10px;
     width: 50%;
 }
@@ -583,10 +578,6 @@ main #info_fotos_ate_avaliacao {
 .li-info {
     margin: 5px;
     font-size: 16px;
-}
-
-.parte_4_h3 {
-    font-size: 22px;
 }
 
 .li_avaliacoes {
