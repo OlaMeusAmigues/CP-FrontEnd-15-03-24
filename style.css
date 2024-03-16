@@ -9,35 +9,46 @@ header {
     height: 80px;
     width: 99%;
     border-bottom: solid#F0F0F0 1px;
-    padding: 0 100px 0 100px;
+    padding: 20px 100px 20px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header #logo {
-    
-}
-
 header #container {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 10px;
+    width: 75%;
 }
 
 #container #busca {
     border: solid#F0F0F0 1px;
     display: flex;
-    padding: 10px;
-    border-radius: 20px;
+    height: 50px;
+    padding: 0 20px;
+    border-radius: 30px;
     width: 400px;
     justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#busca_lupa {
+    background-color: #FF385C;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    height: 58%;
+    width: 8%;
+    justify-content: center;
 }
 
 #container #anuncie {
     padding: 10px;
     border-radius: 20px;
-    width: 200px;
+    display: flex;
+    align-items: center;
 
 }
 
@@ -45,6 +56,17 @@ header #container {
     padding: 10px;
     border-radius: 20px;
     width: 25px;
+    display: flex;
+    align-items: center;
+}
+
+#container_perfil {
+    display: flex;
+    border: solid#F0F0F0 1px;
+    align-items: center;
+    border-radius: 30px;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 #container #perfil {
@@ -74,6 +96,8 @@ main #info_top_fotos {
 #info_top_fotos #titulo {
     width: 600px;
     font-size: 22px;
+    display: flex;
+    gap: 10px;
 }
 
 #info_top_fotos #links {
@@ -85,17 +109,23 @@ main #info_top_fotos {
 #links #compartilhar {
     display: flex;
     align-items: center;
+    gap: 5px;
     margin-left: 30px;
     justify-content: space-between 5px;
 
     margin-left: 6px;
     font-size: 1rem;
     color: #222;
+}
+
+#compartilhar a {
+    color: black;
 }
 
 #links #salvar {
     display: flex;
     align-items: center;
+    gap: 5px;
     margin-left: 30px;
     justify-content: space-between 5px;
 
@@ -104,14 +134,53 @@ main #info_top_fotos {
     color: #222;
 }
 
+#salvar a {
+    color: black;
+}
+
 main #fotos {
-    background-color: red;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#fotos_esquerda {
+    width: 49.5%;
+    height: 320px;
+}
+
+#img1 {
+    height: 320px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#img2, #img3, #img4, #img5 {
+    height: 153px;
+    width: 48.5%;
+    object-fit: cover;
+}
+
+#img3 {
+    border-top-right-radius: 10px;
+}
+
+#img5 {
+    border-bottom-right-radius: 10px;
+}
+
+#fotos_direita {
+    width: 49.5%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
     height: 320px;
 }
 
 main #info_fotos_ate_avaliacao {
-    background-color: red;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -182,12 +251,24 @@ main #info_fotos_ate_avaliacao {
     gap: 0;
 }
 
-.parte_4_h3 {
+#parte_4 {
     display: flex;
     font-size: 22px;
-    align-items: center;
     flex-direction: column;
+    justify-content: center;
     gap: 0;
+}
+
+#parte_4 p {
+    padding: 0;
+    margin: 0;
+}
+
+#parte_4 a {
+    padding: 0;
+    margin: 0;
+    color: black;
+    font-size: 12px;
 }
 
 #parte_esquerda #anfitriao {
@@ -241,6 +322,13 @@ main #info_fotos_ate_avaliacao {
     padding-bottom: 50px;
     border-bottom: solid#F0F0F0 1px;
     margin-bottom: 50px;
+}
+
+#mostrar_mais a {
+    color: black;
+    display: flex;
+    gap: 5px;
+    align-items: center;
 }
 
 #parte_esquerda #onde {
@@ -319,6 +407,10 @@ main #info_fotos_ate_avaliacao {
     justify-content: space-between;
 }
 
+#limpar a {
+    color: black
+}
+
 #info_fotos_ate_avaliacao #parte_direita {
     width: 35%;
     display: flex;
@@ -327,21 +419,31 @@ main #info_fotos_ate_avaliacao {
 }
 
 #cima_direita {
-    background-color: cadetblue;
     width: 100%;
-    height: 500px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
     border: solid#F0F0F0 1px;
     padding: 25px;
+    
+    padding-bottom: 20px;
     display: flex;
     flex-direction: column;
     gap: 25px;
     box-sizing: border-box;
 }
 
-#parte_direita #preco_noite {
- 
+
+.preco{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:700;
+}
+.preco s{
+    color: rgb(100, 100, 100) ;
+}
+
+.preco span{
+    font-size: 15px;
+    color: grey;
 }
 
 #parte_direita #tabela {
@@ -355,27 +457,51 @@ main #info_fotos_ate_avaliacao {
 
 #tabela #parte_cima {
     width: 100%;
-    background-color: blueviolet;
-    border-bottom: solid#F0F0F0 1px;
+    /* border-bottom: solid#000 1px; */
     display: flex;
     box-sizing: border-box;
     padding: 0 10px 0 10px;
     height: 40%;
 }
 
-#parte_cima #check_in {
-    background-color: red;
+table {
+    border: 1px solid black;
+    margin: 0;
+    border-radius: 10px;
+}
+
+#parte_cima {
+    border-bottom: 1px solid black;
+    margin: 0;
+}
+
+#check_in {
+    font-size: 14px;
     width: 50%;
+    border-right: 1px solid black;
+    padding-top: 15px;
 }
 
-#parte_cima #check_out {
-    background-color: red;
-    border-left: solid#F0F0F0 1px;
+#check_out {
+    font-size: 14px;
+    width: 50%;
+    padding: 15px 0 10px 15px;
 }
 
+#hospedes {
+    font-size: 14px;
+    padding-top: 13px;
+}
+
+#seta  {
+    width: 15px;
+    background-image: url(seta-para-baixo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 #tabela #parte_baixo {
     width: 100%;
-    background-color: blueviolet;
     box-sizing: border-box;
     padding: 10px;
     display: flex;
@@ -383,12 +509,24 @@ main #info_fotos_ate_avaliacao {
 }
 
 #parte_direita #reservar {
+    background-color: #da0a64;
     height: 50px;
     border-radius: 10px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    margin-top: 25px;
 }
+
+#reservar a {
+    width: 100%;
+    text-align: center;
+    color: #F0F0F0;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+
 
 #parte_direita #aviso {
     display: flex;
@@ -402,17 +540,25 @@ main #info_fotos_ate_avaliacao {
     justify-content: space-between;
 }
 
+#taxa_noite a {
+    color: #000;
+}
+
+#taxa_limpeza a {
+    color: #000;
+}
+
 #parte_direita #taxa_limpeza {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 30px;
+    border-bottom: 0.5px solid #dddddd;
 }
 
 #parte_direita #taxa_airbnb {
     display: flex;
     justify-content: space-between;
-    border-bottom: solid#F0F0F0 1px;
-    height: 50px;
 }
 
 #parte_direita #total {
@@ -422,7 +568,6 @@ main #info_fotos_ate_avaliacao {
 }
 
 #direita_baixo {
-    background-color: cadetblue;
     height: 150px;
     display: flex;
     flex-direction: column;
@@ -448,7 +593,6 @@ main #info_fotos_ate_avaliacao {
     border-bottom: solid#F0F0F0 1px;
     box-sizing: border-box;
     display: flex;
-    background-color: aquamarine;
     margin-bottom: 40px;
     padding-bottom: 40px;
     width: 100%;
@@ -462,30 +606,25 @@ main #info_fotos_ate_avaliacao {
 }
 
 #dados_usuario {
-    background-color: red;
     display: flex;
     height: 50px;
     gap: 10px;
 }
 
 #estrelas_data {
-    background-color: red;
     display: flex;
     gap: 5px;
 }
 
 #comentario_texto {
-    background-color: red;
     height: 65px;
     width: 80%;
 }
 
 #comentario_mostrar_mais {
-    background-color: red;
 }
 
 #local {
-    background-color: red;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -494,17 +633,14 @@ main #info_fotos_ate_avaliacao {
 }
 
 #local_mapa {
-    background-color: yellow;
     height: 480px;
 }
 
 #local_descricao {
-    background-color: yellow;
     height: 70px;
 }
 
 #deve_saber {
-    background-color: red;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -513,13 +649,11 @@ main #info_fotos_ate_avaliacao {
 }
 
 #deve_saber_blocos {
-    background-color: yellow;
     display: flex;
     justify-content: space-between;
 }
 
 #deve_saber_bloco {
-    background-color: aquamarine;
     display: flex;
     flex-direction: column;
     gap: 10px;
