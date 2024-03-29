@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="nav">
         <div id="logo">
             <img src="./airbnb.png" alt="airbnb_logo">
         </div>
@@ -61,7 +61,7 @@
             </div>
         </div>
     </header>
-    <main>
+    <main id="teste">
         <div id="info_top_fotos">
             <div id="titulo">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
@@ -98,37 +98,36 @@
                 </div>
             </div>
         </div>
+
         <div id="fotos">
             <div id="fotos_esquerda">
                 <img aria-hidden="true" alt="vista para praia" elementtiming="LCP-target" fetchpriority="high" id="img1"
                     src="https://a0.muscache.com/im/pictures/50b9f2a1-0a4b-4e15-bc5a-fb6aa828a2fe.jpg?im_w=720"
                     data-original-uri="https://a0.muscache.com/pictures/50b9f2a1-0a4b-4e15-bc5a-fb6aa828a2fe.jpg"
-                    style="--dls-liteimage-object-fit: cover;">
+                    style="--dls-liteimage-object-fit: cover;" onclick="abrirGaleria()">
             </div>
-
+        
             <div id="fotos_direita">
                 <img id="img2" aria-hidden="true" alt="vista para jardim" elementtiming="LCP-target"
                     src="https://a0.muscache.com/im/pictures/miso/Hosting-54028492/original/9b6c03c5-0728-4a25-82a8-c2fc912d86ea.jpeg?im_w=720"
                     data-original-uri="https://a0.muscache.com/pictures/miso/Hosting-54028492/original/9b6c03c5-0728-4a25-82a8-c2fc912d86ea.jpeg"
-                    style="--dls-liteimage-object-fit: cover;">
+                    style="--dls-liteimage-object-fit: cover;" onclick="abrirGaleria()">
 
                 <img id="img3" aria-hidden="true" alt="placa de boas vindas" elementtiming="LCP-target"
                     src="https://a0.muscache.com/im/pictures/miso/Hosting-54028492/original/621eda1d-1134-41e3-a2d9-3b0ab54800d6.jpeg?im_w=720"
                     data-original-uri="https://a0.muscache.com/pictures/miso/Hosting-54028492/original/621eda1d-1134-41e3-a2d9-3b0ab54800d6.jpeg"
-                    style="--dls-liteimage-object-fit: cover;">
+                    style="--dls-liteimage-object-fit: cover; " onclick="abrirGaleria()">
 
                 <img id="img4" aria-hidden="true" alt="cozinha" elementtiming="LCP-target"
                     src="https://a0.muscache.com/im/pictures/b7baee6d-a64f-4f00-84a3-cff1274faf07.jpg?im_w=720"
                     data-original-uri="https://a0.muscache.com/pictures/b7baee6d-a64f-4f00-84a3-cff1274faf07.jpg"
-                    style="--dls-liteimage-object-fit: cover;">
+                    style="--dls-liteimage-object-fit: cover;" onclick="abrirGaleria()">
 
                 <img id="img5" aria-hidden="true" alt="quarto" elementtiming="LCP-target"
                     src="https://a0.muscache.com/im/pictures/miso/Hosting-54028492/original/d308a1fb-bc87-45f0-82f2-eb04efbc5ece.jpeg?im_w=720"
                     data-original-uri="https://a0.muscache.com/pictures/miso/Hosting-54028492/original/d308a1fb-bc87-45f0-82f2-eb04efbc5ece.jpeg"
-                    style="--dls-liteimage-object-fit: cover;">
+                    style="--dls-liteimage-object-fit: cover;" onclick="abrirGaleria()">
             </div>
-
-
 
         </div>
         <div id="info_fotos_ate_avaliacao">
@@ -616,6 +615,26 @@
 
         </div>
     </main>
+    <div id="fotos_abertas">
+        <div class="fotos_grid">
+            <img src="https://a0.muscache.com/im/pictures/50b9f2a1-0a4b-4e15-bc5a-fb6aa828a2fe.jpg?im_w=960" alt="">
+        </div>
+        <div class="fotos_grid">
+            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-54028492/original/9b6c03c5-0728-4a25-82a8-c2fc912d86ea.jpeg?im_w=720" alt="">
+        </div>
+        <div class="fotos_grid">
+            <img src="https://a0.muscache.com/im/pictures/b7baee6d-a64f-4f00-84a3-cff1274faf07.jpg?im_w=720" alt="">
+        </div>
+        <div class="fotos_grid">
+            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-54028492/original/621eda1d-1134-41e3-a2d9-3b0ab54800d6.jpeg?im_w=1200" alt="">
+        </div>
+    </div>
+    
+        <div class="fechar_fotos" onclick="fecharGaleria()">
+            <span><</span>
+        </div>
+    </div>
+    <script src="app.js"></script>
 </body>
 
 </html>

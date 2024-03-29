@@ -1,3 +1,9 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0 auto;
     padding: 0;
@@ -17,9 +23,8 @@ header {
 
 header #container {
     display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    width: 75%;
+    justify-content: space-evenly;
+    width: 70%;
 }
 
 #container #busca {
@@ -55,7 +60,7 @@ header #container {
 #container #mundo {
     padding: 10px;
     border-radius: 20px;
-    width: 25px;
+    width: 10rem;
     display: flex;
     align-items: center;
 }
@@ -72,7 +77,7 @@ header #container {
 #container #perfil {
     padding: 10px;
     border-radius: 20px;
-    width: 20px;
+    width: 30px;
     align-items: center;
     justify-content: space-between 0;
 }
@@ -143,6 +148,60 @@ main #fotos {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    cursor: pointer;
+    transition: transform 0.25s ease-in-out;
+}
+
+main #fotos img:hover {
+    transform: scale(1.1);
+}
+
+div.fotos_modal{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 4%;
+    visibility: hidden;
+    z-index: 5;
+}
+
+.fechar_fotos{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 5;
+}
+
+div.fotos_modal img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform: scale(0);
+    transition: transform 0.5s ease-in-out ;
+}
+
+#fotos_abertas {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.fotos_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+    justify-items: center;
+}
+
+.fotos_grid img {
+    width: 365px;
+    height: auto;
 }
 
 #fotos_esquerda {
@@ -621,8 +680,8 @@ table {
     width: 80%;
 }
 
-#comentario_mostrar_mais {
-}
+/* #comentario_mostrar_mais {
+} */
 
 #local {
     display: flex;
