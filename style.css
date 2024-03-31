@@ -647,27 +647,48 @@ table {
     display: flex;
     justify-content: center;
 }
-
 #comentarios {
     border-bottom: solid#F0F0F0 1px;
     box-sizing: border-box;
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 40px;
     padding-bottom: 40px;
     width: 100%;
 }
 
-#comentario {
+#comentario, .comentario{
     display: flex;
     flex-direction: column;
     gap: 10px;
     width: 50%;
+    margin-bottom: 40px;
 }
 
 #dados_usuario {
     display: flex;
     height: 50px;
     gap: 10px;
+}
+
+#usuario_imagem {
+    width: 8%;
+}
+
+#usuario_imagem img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 70px;
+    height: 3vw;
+}
+
+#estrelas {
+    display: flex;
+}
+
+.ponto::after {
+    margin-left: 5px;
+    content: "•";
 }
 
 #estrelas_data {
@@ -680,8 +701,93 @@ table {
     width: 80%;
 }
 
-/* #comentario_mostrar_mais {
-} */
+#comente_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #F0EFE9;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+#comente_comente {
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+#comente_descricao_No_Es_Pa, #comente_descricao_estrela_d1_d2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.comente_descricao {
+    width: 30%;
+}
+
+#comente_input_No_Es_Pa, #comente_input_estrela_d1_d2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.input_pequeno {
+    width: 30%;
+}
+
+#comente_descricao_link::after {
+    margin-left: 10px;
+    content: "* Não obrigatório";
+    color: #5a5a5a;
+}
+
+#comente_input_link {
+    margin-bottom: 40px;
+}
+
+#comente_container_nota {
+    display: flex;
+    gap: 5%;
+    align-items: center;
+}
+
+#comente_nota_texto, #comente_nota_valor{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 5px;
+}
+
+#comente_comentario_botao {
+    display: flex;
+    gap: 5%;
+}
+
+#comente_comentario {
+    resize: none;
+    width: 65%;
+    height: 20vh;
+}
+
+#botao_container {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#comente_botao {
+    border: none;
+    background-color: #E51D50;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+
+#comente_botao:hover {
+   cursor: pointer;
+   background-color: #F73058;
+}
 
 #local {
     display: flex;
