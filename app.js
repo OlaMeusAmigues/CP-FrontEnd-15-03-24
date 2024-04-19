@@ -190,8 +190,8 @@ atualizar_comentarios()
 document.addEventListener('scroll', function() {
     var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     var parteDireita = document.getElementById('parte_direita');
-    var stopTop = 150; // A distância mínima do topo onde ele deve parar
-    var stopBottom = document.body.scrollHeight - 600; // Ajuste 600 ao conteúdo do seu site
+    var stopTop = 400; 
+    var stopBottom = document.body.scrollHeight - 2700; 
 
     if (scrollTop > stopTop && scrollTop < stopBottom) {
         parteDireita.style.position = 'fixed';
