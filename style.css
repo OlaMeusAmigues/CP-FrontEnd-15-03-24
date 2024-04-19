@@ -568,6 +568,18 @@ table {
     justify-content: space-between;
 }
 
+#parte_direita {
+    position: absolute; /* Inicialmente posicionado de forma absoluta dentro de um contêiner relativo */
+    right: 10px;
+    width: 300px;
+    max-height: 90vh;
+    overflow-y: auto;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+
 #parte_direita #reservar {
     background-color: #da0a64;
     height: 50px;
@@ -818,6 +830,10 @@ table {
     padding-bottom: 40px;
 }
 
+#local_mobile{
+    display: none;
+}
+
 #local_mapa {
     height: 480px;
 }
@@ -1009,7 +1025,7 @@ table {
 
 
 div span {
-    display: ;
+    
 }
 
 ::after onclick div span {
@@ -1041,6 +1057,17 @@ div span {
         margin: 0.5rem;
     }
 
+    #local {
+        display: none;
+    }
+
+    #local_mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        padding-bottom: 40px;
+    }
 }
 
 @media only screen and (max-width: 1044px){
@@ -1183,3 +1210,4 @@ div span {
         padding: 0;
     }
 }
+

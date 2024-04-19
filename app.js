@@ -186,3 +186,21 @@ const atualizar_comentarios = () => {
 
 
 atualizar_comentarios()
+
+document.addEventListener('scroll', function() {
+    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    var parteDireita = document.getElementById('parte_direita');
+    var stopTop = 150; // A distância mínima do topo onde ele deve parar
+    var stopBottom = document.body.scrollHeight - 600; // Ajuste 600 ao conteúdo do seu site
+
+    if (scrollTop > stopTop && scrollTop < stopBottom) {
+        parteDireita.style.position = 'fixed';
+        parteDireita.style.top = '10px';
+    } else if (scrollTop <= stopTop) {
+        parteDireita.style.position = 'absolute';
+        parteDireita.style.top = '10px';
+    } else {
+        parteDireita.style.position = 'absolute';
+        parteDireita.style.top = (stopBottom - stopTop) + 'px';
+    }
+});
