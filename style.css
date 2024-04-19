@@ -492,6 +492,10 @@ main #info_fotos_ate_avaliacao {
     box-sizing: border-box;
 }
 
+#menu_reservar {
+    display: none;
+}
+
 
 .preco{
     font-family: Arial, Helvetica, sans-serif;
@@ -1111,8 +1115,8 @@ div span {
 
 
 @media only screen and (max-width: 741px) {
-    
-    
+
+
     #info_top_fotos #titulo {
         display: none;
     }
@@ -1148,6 +1152,32 @@ div span {
         display: none;
     }
 
+    #menu_reservar {
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        flex-direction: row;
+        gap: 450px;
+        background-color: #ffffff;
+        z-index: 99999;
+        border-top: 1px solid #dddddd;
+    }
+
+    #menu_reservar #btn-reservar-mobile {
+        background-color: #da0a64;
+        height: 50px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 25px;
+        width: 100%;
+        color: #F0F0F0;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+    }
     #info_fotos_ate_avaliacao #parte_esquerda {
         display: flex;
         flex-direction: column;
