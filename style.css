@@ -14,7 +14,7 @@ body {
 header {
     box-sizing: border-box;
     height: 80px;
-    width: 99%;
+    min-width: 75%;
     border-bottom: solid#F0F0F0 1px;
     padding: 20px 100px 20px 100px;
     display: flex;
@@ -600,6 +600,7 @@ table {
     justify-content: space-between;
 }
 
+
 #taxa_noite a {
     color: #000;
 }
@@ -1003,14 +1004,24 @@ table {
 }
 
 .fechar_fotos  {
-    display: none;
+    display: flex;
 }
 
 
+div span {
+    display: ;
+}
+
+::after onclick div span {
+    display: flex;
+}
+
 
 @media only screen and (max-width: 1209px) {
-    header {
-        display: none;
+    header #container {
+        width: 90%;
+        justify-content: center;
+        align-items: center;
     }
 
     main #fotos {
@@ -1018,31 +1029,51 @@ table {
     }
 
     #fotos_esquerda{
-        min-width: 75%;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
     }
 
     #fotos_direita {
-       min-width: 65%;
-       margin: 0.5rem;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 0.5rem;
     }
 
 }
 
-@media only screen and (max-wifth: 967px) {
+@media only screen and (max-width: 1044px){
+    #fotos_esquerda{
+        min-width: 45%;
+        justify-content: center;
+        align-items: center;
+    }
+
     #fotos_direita {
-        min-height: 55%;
+        min-width: 56%;
+        justify-content: center;
+        align-items: center;
+        margin: 0.5rem;
+    }
+
+}
+@media only screen and (max-width: 967px) {
+    
+    header {
+        display: none;
+    }
+
+    #fotos_direita {
+        display: none;
     }
    
     #fotos_esquerda {
         min-width: 45%;
-    
     }
 }
 
 @media only screen and (max-width: 923px) {
-    #fotos_direita {
-        display: none;
-    }
 
     #fotos_esquerda {
         width: 100%;
@@ -1062,6 +1093,7 @@ table {
     main #info_top_fotos {
         justify-content: space-between;
         align-items: center;
+        width: 100%;
     }
 
     #acomodacoes {
