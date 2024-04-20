@@ -1039,7 +1039,7 @@ div span {
 
 @media only screen and (max-width: 1209px) {
     header #container {
-        width: 90%;
+        max-width: 1120px;
         justify-content: center;
         align-items: center;
     }
@@ -1071,6 +1071,35 @@ div span {
         gap: 20px;
         width: 100%;
         padding-bottom: 40px;
+    }
+    
+    div #avaliacao.letra_forte{
+        max-width: 1120px;
+    }
+}
+
+@media only screen and (max-width: 971px){ 
+    header {
+        min-width: 1120px ;
+    }
+   
+    #fotos_esquerda{
+        min-width: 45%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #fotos_direita {
+        min-width: 70%;
+        justify-content: center;
+        align-items: center;
+        margin: 0.5rem;
+}
+}
+
+@media only screen and (max-width: 959px){
+    #fotos_esquerda{
+        width: 100%;
     }
 }
 
@@ -1125,6 +1154,8 @@ div span {
         justify-content: space-between;
         align-items: center;
         width: 100%;
+        margin-left: 10rem;
+        margin-top: 1.5rem;
     }
 
     #acomodacoes {
@@ -1198,7 +1229,13 @@ div span {
     main{
         padding: 25px 40px 0 40px;
     }  
+
+    div #cima_direita.letra_forte{ 
+        max-width: 80%;
+        max-height: 80%;
+    }
 }
+
 
 @media screen and (max-width: 949px) {
     #comentario, .comentario{
