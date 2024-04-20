@@ -20,14 +20,14 @@ chaves_local_storage = ['nomes', 'imagens', 'lugares_Es', 'lugares_Pa', 'notas',
 //  }
 
 
-function abrirGaleria(){
-    var div = document.getElementById('fotos_abertas'); 
-    div.style.display = 'block';
-    var div = document.getElementById('teste');
-    div.style.display = 'none';
-    var div = document.getElementById('nav');
-    div.style.display = 'none';
-}
+// function abrirGaleria(){
+//     var div = document.getElementById('fotos_abertas'); 
+//     div.style.display = 'block';
+//     var div = document.getElementById('teste');
+//     div.style.display = 'none';
+//     var div = document.getElementById('nav');
+//     div.style.display = 'none';
+// }
 
 
 function fecharGaleria(){

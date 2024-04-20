@@ -264,7 +264,6 @@ main #info_fotos_ate_avaliacao {
     padding: 20px;
     border: solid#F0F0F0 1px;
     border-radius: 10px;
-    height: 110px;
     align-items: center;
     justify-content: space-between;
 }
@@ -1154,7 +1153,6 @@ div span {
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        margin-left: 10rem;
         margin-top: 1.5rem;
     }
 
@@ -1188,10 +1186,11 @@ div span {
         bottom: 0;
         display: flex;
         flex-direction: row;
-        gap: 450px;
         background-color: #ffffff;
         z-index: 99999;
         border-top: 1px solid #dddddd;
+        width: 100%;
+        justify-content: space-between;
     }
 
     #menu_reservar #btn-reservar-mobile {
@@ -1208,6 +1207,7 @@ div span {
         font-family: Arial, Helvetica, sans-serif;
         font-weight: 600;
         font-size: 18px;
+        max-width: 200px;
     }
     #info_fotos_ate_avaliacao #parte_esquerda {
         display: flex;
@@ -1220,8 +1220,20 @@ div span {
 }
 
 @media screen and (min-width: 1280px) {
-    #comentarios_comente_container {
+    #comentarios_comente_container, #deve_saber, #local, main #info_fotos_ate_avaliacao, main #fotos, main #info_top_fotos, header {
         width: 1120px;
+        box-sizing: border-box;
+    }
+
+    header {
+        padding: 0;
+        min-width: 0;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -1276,5 +1288,48 @@ div span {
     main {
         padding: 0;
     }
-}
 
+    #deve_saber_blocos {
+        display: flex;
+        flex-direction: column;
+        padding: 0 24px;
+        padding-bottom: 40px;
+    }
+
+    #deve_saber_bloco{
+        width: 100%;
+        padding: 40px 0;
+        border-bottom: 1px solid rgb(240, 239, 233);
+    }
+
+    #o_que_deve_saber {
+        display: none;
+    }
+    
+    #agendar img {
+        width: 100%;
+    }
+
+    #avaliacao {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        border: none;
+        gap: 20px;
+    }
+
+    #parte_3 {
+        justify-content: center;
+        border: 1px solid white;
+    }
+
+    #o_que_oferece #pontos {
+        flex-wrap: nowrap;
+        height: auto;
+    }
+
+    #mostrar_ponto {
+        width: auto;
+    }
+
+}
